@@ -1,0 +1,9 @@
+{
+	"pack": {
+		"name": "vve3.0_rp",
+		"status": "Building",
+		"description": "vanilla vehicle engine 3.0 resourcepack, by-xiaodou123.",
+		"min_format": [69,0],
+		"max_format": [1223,0]
+	}
+}
