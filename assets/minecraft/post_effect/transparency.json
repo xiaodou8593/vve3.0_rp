@@ -3,8 +3,8 @@
         "final": {},
         "swap": {},
         "swap2": {},
-        "data": {"width": 5, "height": 3, "persistent": true},
-        "data_swap": {"width": 5, "height": 3}
+        "data": {"width": 5, "height": 15, "persistent": true},
+        "data_swap": {"width": 5, "height": 15}
     },
     "passes": [
         {
@@ -126,12 +126,12 @@
                     {
                         "name": "BlurDir",
                         "type": "vec2",
-                        "value": [ 1.0, 0.0 ]
+                        "value": [ 0.0, 0.0 ]
                     },
                     {
                         "name": "Radius",
                         "type": "float",
-                        "value": 5.0
+                        "value": 0.0
                     }
                 ]
             }
@@ -142,7 +142,7 @@
             "inputs": [
                 {
                     "sampler_name": "In",
-                    "target": "swap",
+                    "target": "final",
                     "bilinear": true
                 }
             ],
@@ -152,12 +152,12 @@
                     {
                         "name": "BlurDir",
                         "type": "vec2",
-                        "value": [ 0.0, 1.0 ]
+                        "value": [ 0.0, 0.0 ]
                     },
                     {
                         "name": "Radius",
                         "type": "float",
-                        "value": 5.0
+                        "value": 0.0
                     }
                 ]
             }
@@ -177,12 +177,12 @@
                     {
                         "name": "BlurDir",
                         "type": "vec2",
-                        "value": [ 1.0, 0.0 ]
+                        "value": [ 0.0, 0.0 ]
                     },
                     {
                         "name": "Radius",
                         "type": "float",
-                        "value": 5.0
+                        "value": 0.0
                     }
                 ]
             }
@@ -203,12 +203,12 @@
                     {
                         "name": "BlurDir",
                         "type": "vec2",
-                        "value": [ 0.0, 1.0 ]
+                        "value": [ 0.0, 0.0 ]
                     },
                     {
                         "name": "Radius",
                         "type": "float",
-                        "value": 5.0
+                        "value": 0.0
                     }
                 ]
             }
@@ -228,12 +228,12 @@
                     {
                         "name": "BlurDir",
                         "type": "vec2",
-                        "value": [ 1.0, 0.0 ]
+                        "value": [ 0.0, 0.0 ]
                     },
                     {
                         "name": "Radius",
                         "type": "float",
-                        "value": 5.0
+                        "value": 0.0
                     }
                 ]
             }
@@ -254,12 +254,12 @@
                     {
                         "name": "BlurDir",
                         "type": "vec2",
-                        "value": [ 1.0, 0.0 ]
+                        "value": [ 0.0, 0.0 ]
                     },
                     {
                         "name": "Radius",
                         "type": "float",
-                        "value": 5.0
+                        "value": 0.0
                     }
                 ]
             }

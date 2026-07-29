@@ -34,7 +34,7 @@ void readMarker(ivec2 iCoord, ivec2 pixelPos, float green, int op, float rate) {
             return;
         }
         if (iCoord.x == 1) {
-            
+
             if (previousColor.b == particleColor.b) {
                 return;
             }
@@ -104,11 +104,10 @@ void constantMotion(ivec2 iCoord, int op, float targetValue) {
     if (op == 2) {
         dx = fract(dx + 0.5) - 0.5;
     }
-    if (abs(v) < 0.01 && abs(dx) < 0.01) {
-        // Fix to target if target is reached
-        if (iCoord.x == 3) {
-            fragColor = encodeFloat(0.0);
-        } else {
+    // Do not use a velocity threshold here: low roll-speed grades are valid.
+    // min(v * deltaTime, abs(dx)) below already prevents overshoot.
+    if (abs(dx) < 0.000001) {
+        if (iCoord.x == 4) {
             fragColor = encodeFloat(targetValue);
         }
         return;
@@ -181,7 +180,7 @@ void main() {
                 // set speed to 0
                 fragColor = encodeFloat(0.0);
                 return;
-            } 
+            }
             // iCoord.x is 4
             fragColor = encodeFloat(targetValue);
             return;
