@@ -1,4 +1,6 @@
 {
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "bx_res_bca:item/bx_vehicle_0/wheel/0",
 		"1": "bx_res_bca:item/bx_vehicle_0/wire",
@@ -460,16 +462,15 @@
 			"translation": [0, -11.5, 0],
 			"scale": [4, 4, 4]
 		},
-		"fixed":{
-			"scale":[1.0,1.0,1.0],
-			"rotation":[0.0,0.0,0.0],
-			"translation":[0.0,4.8,0.0]
+		"fixed": {
+			"translation": [0, 4.8, 0]
 		}
 	},
 	"groups": [
 		{
 			"name": "group",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
 			"children": [
 				0,
@@ -478,6 +479,7 @@
 				{
 					"name": "group",
 					"origin": [0, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 				}
@@ -486,24 +488,28 @@
 		{
 			"name": "movelity_00",
 			"origin": [4, 2, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [24, 25]
 		},
 		{
 			"name": "fixlity_10",
 			"origin": [4, 2, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [26, 27]
 		},
 		{
 			"name": "movelity_01",
 			"origin": [4, 2, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [28, 29]
 		},
 		{
 			"name": "fixlity_11",
 			"origin": [4, 2, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [30, 31]
 		}
